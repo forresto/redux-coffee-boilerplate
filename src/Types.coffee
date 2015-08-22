@@ -1,0 +1,6 @@
+module.exports = Types =
+  SET_LOADING: 'SET_LOADING'
+  LOAD_ITEMS: 'LOAD_ITEMS'
+  ADD_ITEM: 'ADD_ITEM'
+  SET_DONE: 'SET_DONE'
+  SET_TEXT: 'SET_TEXT'

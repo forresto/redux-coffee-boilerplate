@@ -1,0 +1,48 @@
+{
+  "name": "redux-coffee-boilerplate",
+  "author": "Forrest Oliphant",
+  "version": "0.0.1",
+  "description": "get started with react + redux + immutable + coffeescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node webpack-hot-server.js",
+    "test": "npm run build_test; ./node_modules/.bin/mocha-phantomjs test/runner.html",
+    "build": "npm run build_dev; npm run build_test; npm run build_dist; ",
+    "build_dev": "BUILD=dev npm run webpack;",
+    "build_test": "BUILD=test npm run webpack;",
+    "build_dist": "BUILD=dist npm run webpack;",
+    "webpack": "./node_modules/.bin/webpack --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forresto/redux-coffee-boilerplate.git"
+  },
+  "keywords": [
+    "editor"
+  ],
+  "bugs": {
+    "url": "https://github.com/forresto/redux-coffee-boilerplate/issues"
+  },
+  "homepage": "https://github.com/forresto/redux-coffee-boilerplate#readme",
+  "dependencies": {
+    "immutable": "^3.7.4",
+    "react": "^0.13.3",
+    "react-redux": "^0.9.0",
+    "redux": "^1.0.1",
+    "redux-devtools": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coffee-jsx-loader": "^0.1.2",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "mocha": "^2.2.5",
+    "mocha-loader": "^0.7.1",
+    "mocha-phantomjs": "^3.6.0",
+    "phantomjs": "1.9.7-15",
+    "react-hot-loader": "^1.2.8",
+    "sinon": "^1.16.1",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

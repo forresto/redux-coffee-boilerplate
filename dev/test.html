@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test - hot server</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="test-container">`npm start` will run a server that does HMR.</div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../node_modules/sinon/pkg/sinon.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+      expect = chai.expect;
+    </script>
+    <script src="../webpack-in-memory/test.hot.js"></script>
+    <!--
+    <script>
+      // Taken care of by mocha! in webpack.hot.js
+      mocha.run();
+    </script>
+    -->
+  </body>
+</html>
