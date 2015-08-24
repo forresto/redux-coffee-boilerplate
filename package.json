@@ -2,6 +2,7 @@
   "name": "redux-coffee-boilerplate",
   "author": "Forrest Oliphant",
   "version": "0.0.1",
+  "license": "MIT",
   "description": "get started with react + redux + immutable + coffeescript",
   "main": "index.js",
   "scripts": {
@@ -29,7 +30,7 @@
     "react": "^0.13.3",
     "react-redux": "^0.9.0",
     "redux": "^1.0.1",
-    "redux-devtools": "^1.0.2"
+    "redux-devtools": "^1.1.1"
   },
   "devDependencies": {
     "chai": "^3.2.0",
